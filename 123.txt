@@ -1,0 +1,36 @@
+配置环境变量 注意第二、三两行是配置NETCDF的编译依赖，编译完 NETCDF后最好注释掉，以后编译有需要依赖时再加上
+
+最后可以按照交互界面直接把Conda的可执行文件目录添加到环境变量PATH中， 否则接下来无法直接使用conda命令
+
+
+安装完miniconda后需
+需要关闭终端，重新打开终端再测试：
+$ conda
+
+
+测试f2py：
+1.没找到怎么用python打开该代码。
+2.没装好f2py
+f2py -m testfortran -c testfortran.f90  后没有生成.pyd文件？
+
+
+#export CPPFLAGS=-I/usr/local/hdf5/include
+#export LDFLAGS=-L/usr/local/hdf5/lib
+export LD_LIBRARY_PATH=/usr/local/hdf5/lib:$LD_LIBRARY_PATH 
+
+#export CPPFLAGS=-I/usr/local/NETCDF/include
+#export LDFLAGS=-L/usr/local/NETCDF/lib
+export LD_LIBRARY_PATH=/usr/local/hdf5/lib:$LD_LIBRARY_PATH  
+export LD_LIBRARY_PATH=/usr/local/NETCDF/lib:$LD_LIBRARY_PATH 
+
+ctrl+H在home目录下打开隐藏文件（比如.bashrc）
+
+
+为什在EXCEL里显示为多行多列的数据，用pandas读取时却变成多行一列的格式
+
+mstsc 10.130.40.2
+
+https://apps.ecmwf.int/datasets/data/interim-full-daily/levtype=sfc/
+https://www.mathworks.com/help/images/single-image-super-resolution-using-deep-learning.html
+
+统计分析数据量必须通过显著性检验！！！数据量大，才更有代表性。
